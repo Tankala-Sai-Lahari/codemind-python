@@ -1,6 +1,7 @@
-s=list(input().lower())
+s=input().lower()
 l=[]
 for i in s:
-    if i not in l and i!=" " and s.count(i)<=1:
+    if i not in l and i!=" ":
         l.append(i)
-print("".join(sorted(l)))
+l.sort()
+print("".join(l))
