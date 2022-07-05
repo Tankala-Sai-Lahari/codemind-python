@@ -1,4 +1,6 @@
 l=input().split()
-for i in range(0,len(l),2):
-    l[i]=l[i][::-1]
-print(*l)
+for i in range(len(l)):
+    if i%2==0:
+        print(l[i][::-1],end=" ")
+    else:
+        print(l[i],end=" ")
