@@ -1,9 +1,9 @@
-def prime(num):
-    if num<=1:
+def prime(n):
+    if n<2:
         return False
     else:
-        for i in range(2,int(num**0.5)+1):
-            if num%i==0:
+        for i in range(2,int(n**0.5)+1):
+            if n%i==0:
                 return False
         else:
             return True
@@ -12,6 +12,6 @@ l=list(map(int,input().split()))
 k=int(input())
 c=0
 for i in l:
-    if i>=k and prime(i) :
+    if i>=k and prime(i):
         c+=1
 print(c)
