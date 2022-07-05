@@ -1,9 +1,15 @@
-a,b=map(int,input().split())
-l=list(map(int,input().split()))
-f=list(map(int,input().split()))
-z=list(set(l+f))
+n,m=map(int,input().split())
+l1=list(map(int,input().split()))
+l2=list(map(int,input().split()))
+l3=[]
+t=[]
+for i in l1+l2:
+    if i in l1 and i in l2:
+        l3.append(i)
+    if i not in t:
+        t.append(i)
 c=0
-for i in z:
-    if i not in l or i not in f:
+for i in t:
+    if i not in l3:
         c+=1
-print(c)
+print(c)       
