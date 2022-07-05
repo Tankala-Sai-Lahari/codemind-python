@@ -1,6 +1,6 @@
 s=input()
-l=[]
+c=0
 for i in s:
-    if i in "AEIOUaeiou":
-        l.append(i)
-print(len(l))
+    if i in "aeiouAEIOU":
+        c+=1
+print(c)
