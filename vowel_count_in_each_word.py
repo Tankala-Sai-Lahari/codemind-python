@@ -1,9 +1,7 @@
-l=input().split()
-s=[]
-for i in l:
+s=input().split()
+for i in s:
     c=0
     for j in i:
-        if j in "AEIOUaeiou" :
+        if j in "AEIOUaeioiu":
             c+=1
-    s.append(c)
-print(*s)
+    print(c,end=" ")
