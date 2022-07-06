@@ -1,14 +1,10 @@
 s=input()
-l=[]
-d=[]
-for i in s:
-    if i in "AEIOUaeiou" and i not in l:
-        l.append(i)
+v=""
 for i in "aeiou":
-    if i not in l:
-      d.append(i)  
-d.sort()
-if len(d)>0:
-    print(*d)
+    if i not in s:
+        v+=i
+if len(v)>0:
+    for i in v:
+        print(i,end=" ")
 else:
     print(0)
