@@ -1,1 +1,2 @@
-print(input().split()[-1][0])
+l=input().split()
+print(l[-1][0])
