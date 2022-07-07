@@ -1,9 +1,9 @@
 l=input().split()
-s=[]
+l1=[]
 for i in l:
     c=0
     for j in i:
-        if j in "AEIOUaeiou" :
+        if j in "aeiouAEIOU":
             c+=1
-    s.append(c)
-print(s.count(min(s)))
+    l1.append(c)
+print(l1.count(min(l1)))
