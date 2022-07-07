@@ -1,2 +1,2 @@
-i=input().lower()
-print(i==i[::-1])
+s=input().lower()
+print(s==s[::-1])
