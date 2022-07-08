@@ -1,6 +1,9 @@
 s=input()
-l=[]
+f=[]
 for i in s:
-    if i in "AEIOUaeiou" and i not in l:
-        l.append(i)
-print(*l)
+    if i in "aeiouAEIOU" and i not in f:
+        f.append(i)
+if len(f)>0:
+    print(*f)
+else:
+    print(-1)
