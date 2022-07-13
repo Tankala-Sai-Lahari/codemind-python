@@ -1,7 +1,6 @@
-s=input().lower()
-l=[]
-for i in s:
-    if i not in l and i!=" ":
-        l.append(i)
-l.sort()
-print("".join(l))
+s1=input().lower()
+c=""
+for i in s1:
+    if i not in c and i!=" ":
+        c+=i
+print("".join(sorted(list(c))))
