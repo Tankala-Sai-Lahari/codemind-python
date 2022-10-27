@@ -1,7 +1,8 @@
-n,m=map(int,input().split())
-l1=[n*i for i in range(1,n*n) ]
-l2=[m*i for i in range(1,m*m)]
-for i in l1:
-    if i in l2:
-        print(i)
+a,b=map(int,input().split())
+lcm=1
+for i in range(10000):
+    if lcm%a==0 and lcm%b==0:
         break
+    else:
+        lcm+=1
+print(lcm)
