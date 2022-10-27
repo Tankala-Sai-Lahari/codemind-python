@@ -1,14 +1,15 @@
-def prime(num):
-    if num<=1:
-        return False
-    for i in range(2,int(num**0.5)+1):
-        if num%i==0:
-            return False
+def prime(a):
+    c=0
+    for i in range(1,a+1):
+        if a%i==0:
+            c+=1
+    if c==2:
+        return 1
     else:
-        return True
-m=int(input())
-c=0
-for i in range(1,m+1):
-    if m%i==0 and not(prime(i)):
-        c+=1
-print(c)
+        return 0
+a=int(input())
+su=0
+for i in range(1,a+1):
+    if prime(i)!=1 and a%i==0:
+        su+=1
+print(su)
