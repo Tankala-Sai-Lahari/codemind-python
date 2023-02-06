@@ -1,0 +1,16 @@
+def isHappy(self, n: int) -> bool:
+        l=[]
+        while(n!=1):
+            temp=n
+            res=0
+            while(temp!=0):
+                res+=(temp%10)**2
+                temp=temp//10
+            if(res not in  l):
+                l.append(res)
+                n=res
+            else:
+                return False
+        if n==1:
+            return True
+            
